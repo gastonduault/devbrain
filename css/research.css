@@ -295,14 +295,6 @@ main aside ul i {
     padding-top: 15px;
 }
 
-main h3 {
-    margin-top: 40px;
-    font-family: Quicksand;
-    color: #00FF73;
-    font-size: 1.5em;
-    text-align: center;
-}
-
 main section h4 {
     margin-top: 30px;
     font-family: Quicksand;
@@ -357,6 +349,21 @@ main .section3 article img {
 main .section3 article p {
     margin-top: 20px;
     text-align: left;
+}
+
+main .article1 {
+    height: 500px;
+}
+
+main .article1 .legendeNP {
+    position: absolute;
+    right: 20px;
+    margin-top: 50px;
+}
+
+main .article1 .neuralplan {
+    position: absolute;
+    left: 20px;
 }
 
 

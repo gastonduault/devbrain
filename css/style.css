@@ -217,6 +217,10 @@
         font-family: Quicksand;
     }
     
+    section p {
+        font-size: 1.20em;
+    }
+    
     .section2 a {
         margin-top: 130px;
         margin-left: 80px;
@@ -347,8 +351,6 @@
         display: flex;
         justify-content: space-between;
     }
-    
-    footer nav .lienreseau {}
     
     footer nav a:link,
     footer nav a:visited {
