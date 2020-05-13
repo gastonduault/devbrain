@@ -337,7 +337,7 @@ main .section2 article img {
 
 main .section2 article p {
     margin-top: 20px;
-    text-align: right;
+    text-align: left;
 }
 
 main .section3 article img {
@@ -366,6 +366,15 @@ main .article1 .neuralplan {
     left: 20px;
 }
 
+main .article2 {
+    height: 400px;
+}
+
+main .article2 .imgproj {
+    position: absolute;
+    left: 50px;
+}
+
 
 /*--------------------------------------------------------------footer----------------------------------------------------*/
 
@@ -373,7 +382,7 @@ footer {
     background-color: #000000;
     border-top: #00FF73 3px solid;
     font-family: Quicksand;
-    margin-top: 460px;
+    margin-top: 1000px;
     width: 100%;
     z-index: 100;
 }
