@@ -267,6 +267,7 @@
     .section2 img {
         position: absolute;
         left: 0px;
+        padding-bottom: 10px;
     }
     
     .section2 .img2s2 {
@@ -317,6 +318,7 @@
     .section3 img {
         position: absolute;
         right: 0px;
+        padding-bottom: 10px;
     }
     
     .section3 .img2s3 {
@@ -380,7 +382,8 @@
     
     @media (max-width: 990px) {
         .section2 img,
-        .section3 img {
+        .section3 img,
+        footer .lienfooter1 {
             display: none;
         }
         main .introduction p {

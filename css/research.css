@@ -314,7 +314,7 @@ main section article {
     border-radius: 15px;
     color: #ffffff;
     font-family: Quicksand;
-    font-size: 1.2em;
+    font-size: 1.3em;
     padding: 35px;
     color: #000000;
 }
@@ -350,8 +350,8 @@ main .article2 img {
 
 main .article2 p {
     padding-top: 30px;
-    position: absolute;
-    right: 0px;
+    text-align: right;
+    text-overflow: hidden;
 }
 
 main .article3 {
@@ -365,8 +365,7 @@ main .article3 img {
 
 main .article3 p {
     padding-top: 30px;
-    position: absolute;
-    left: 0px;
+    text-align: left;
 }
 
 main .article4 {
@@ -380,8 +379,7 @@ main .article4 img {
 
 main .article4 p {
     padding-top: 50px;
-    position: absolute;
-    left: 0px;
+    text-align: left;
 }
 
 
@@ -452,6 +450,16 @@ footer .copyright {
     }
     main section article {
         height: auto;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    main .article2,
+    main .article3,
+    main .article4 {
+        height: 500px;
+    }
+    footer {
+        margin-top: 1300px;
     }
     footer .lienfooter2 a {
         text-align: center;
@@ -460,6 +468,20 @@ footer .copyright {
     }
     footer .copyright {
         margin-top: 30px;
+    }
+}
+
+@media (max-width: 350px) {
+    main .article2,
+    main .article3,
+    main .article4 {
+        height: 700px;
+    }
+    main .article1 {
+        height: 870px;
+    }
+    footer {
+        margin-top: 2270px;
     }
 }
 
