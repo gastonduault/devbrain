@@ -328,8 +328,9 @@
         background-color: #000000;
         border-top: #00FF73 3px solid;
         font-family: Quicksand;
-        margin-top: 110px;
+        margin-top: 150px;
         width: 100%;
+        z-index: 100;
     }
     
     footer address {
@@ -346,7 +347,7 @@
         color: #28A5FF;
     }
     
-    footer nav {
+    footer .lienfooter1 {
         padding-bottom: 30px;
         display: flex;
         justify-content: space-between;
@@ -392,5 +393,19 @@
             margin-left: 10px;
             margin-right: 10px;
             padding: 5px;
+        }
+        footer .lienfooter2 a {
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
+        }
+        footer .copyright {
+            margin-top: 30px;
+        }
+    }
+    
+    @media (min-width: 990px) {
+        footer .lienfooter2 {
+            display: none;
         }
     }

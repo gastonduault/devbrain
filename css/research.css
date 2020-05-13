@@ -205,7 +205,7 @@ main {
 main nav {
     background: linear-gradient(#000000, #525151);
     width: 300px;
-    height: 1460px;
+    height: 1950px;
     font-family: Quicksand;
     text-align: left;
     padding-bottom: 5px;
@@ -240,6 +240,11 @@ main nav .listetxt a:hover {
     color: #00FF73;
 }
 
+main nav .team1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 a:hover .titreliste {
     color: #00FF73;
     transition: .4s;
@@ -258,28 +263,28 @@ a:hover .titreliste {
 
 main .aside1 {
     position: absolute;
-    top: 190px;
+    top: 150px;
     left: 0px;
     z-index: 2;
 }
 
 main .aside2 {
     position: absolute;
-    top: 490px;
+    top: 640px;
     left: 0px;
     z-index: 2;
 }
 
 main .aside3 {
     position: absolute;
-    top: 800px;
+    top: 1030px;
     left: 0px;
     z-index: 2;
 }
 
 main .aside4 {
     position: absolute;
-    top: 1150px;
+    top: 1330px;
     left: 0px;
     z-index: 2;
 }
@@ -309,45 +314,13 @@ main section article {
     border-radius: 15px;
     color: #ffffff;
     font-family: Quicksand;
+    font-size: 1.2em;
     padding: 35px;
     color: #000000;
 }
 
 main section article h5 {
     color: #000000;
-    text-align: left;
-}
-
-main .section1 article img {
-    position: absolute;
-    right: 0px;
-    vertical-align: middle;
-}
-
-main .section1 article p {
-    margin-top: 20px;
-    text-align: left;
-}
-
-main .section2 article img {
-    position: absolute;
-    left: 0px;
-    vertical-align: middle;
-}
-
-main .section2 article p {
-    margin-top: 20px;
-    text-align: left;
-}
-
-main .section3 article img {
-    position: absolute;
-    right: 0px;
-    vertical-align: middle;
-}
-
-main .section3 article p {
-    margin-top: 20px;
     text-align: left;
 }
 
@@ -367,12 +340,48 @@ main .article1 .neuralplan {
 }
 
 main .article2 {
-    height: 400px;
+    height: 300px;
 }
 
-main .article2 .imgproj {
+main .article2 img {
     position: absolute;
-    left: 50px;
+    left: 0px;
+}
+
+main .article2 p {
+    padding-top: 30px;
+    position: absolute;
+    right: 0px;
+}
+
+main .article3 {
+    height: 300px;
+}
+
+main .article3 img {
+    position: absolute;
+    right: 10px;
+}
+
+main .article3 p {
+    padding-top: 30px;
+    position: absolute;
+    left: 0px;
+}
+
+main .article4 {
+    height: 350px;
+}
+
+main .article4 img {
+    position: absolute;
+    right: 0px;
+}
+
+main .article4 p {
+    padding-top: 50px;
+    position: absolute;
+    left: 0px;
 }
 
 
@@ -382,7 +391,7 @@ footer {
     background-color: #000000;
     border-top: #00FF73 3px solid;
     font-family: Quicksand;
-    margin-top: 1000px;
+    margin-top: 800px;
     width: 100%;
     z-index: 100;
 }
@@ -401,7 +410,7 @@ footer address a:link {
     color: #28A5FF;
 }
 
-footer nav {
+footer .lienfooter1 {
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
@@ -437,7 +446,25 @@ footer .copyright {
 @media (max-width: 990px) {
     main nav,
     main section img,
-    main aside {
+    main aside,
+    footer .lienfooter1 {
+        display: none;
+    }
+    main section article {
+        height: auto;
+    }
+    footer .lienfooter2 a {
+        text-align: center;
+        margin-top: 10px;
+        width: 100%;
+    }
+    footer .copyright {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 990px) {
+    footer .lienfooter2 {
         display: none;
     }
 }
