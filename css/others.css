@@ -5,18 +5,16 @@
     font-style: normal;
 }
 
-body,
-html {
+body {
     background-color: #ffffff;
     padding: 0px;
     margin: 0px;
-    scroll-behavior: smooth;
 }
 
 header {
     position: sticky;
     top: 0px;
-    z-index: 4;
+    z-index: 1;
 }
 
 .menu {
@@ -197,186 +195,56 @@ a.animated-button.victoria-two:after {
 }
 
 
-/*-----------------------------------------------------------page--------------------------*/
+/*******************************************************************main***************************/
 
-main nav {
-    background: linear-gradient(#000000, #525151);
-    width: 300px;
-    height: 1950px;
-    font-family: Quicksand;
-    text-align: left;
-    padding-bottom: 5px;
-    padding: 0px;
-    opacity: 1;
-    border-right: solid #000000 1px;
-    border-bottom: #000000 solid 1px;
-}
-
-main nav ul {
-    position: sticky;
-    top: 50px;
-    opacity: 1;
-    z-index: 3;
-    background: #525151;
-    border-radius: 0px 0px 5px 0px;
-}
-
-main nav ul a:link,
-main nav ul a:visited {
-    text-decoration: none;
-    color: #BDBCBB;
-    list-style: none;
-}
-
-main nav .listetxt a:hover {
-    display: list-item;
-    list-style-image: url(../images/puce.png);
-    padding-left: 10px;
-    opacity: 1;
-    transition: .4s;
-    color: #00FF73;
-}
-
-main nav .team1 {
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-a:hover .titreliste {
-    color: #00FF73;
-    transition: .4s;
-}
-
-.titreliste {
-    color: #ffffff;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    padding: 0px;
-}
-
-.titreliste i {
-    color: #00FF73;
-}
-
-main .aside1 {
-    position: absolute;
-    top: 150px;
-    left: 0px;
-    z-index: 2;
-}
-
-main .aside2 {
-    position: absolute;
-    top: 640px;
-    left: 0px;
-    z-index: 2;
-}
-
-main .aside3 {
-    position: absolute;
-    top: 1030px;
-    left: 0px;
-    z-index: 2;
-}
-
-main .aside4 {
-    position: absolute;
-    top: 1330px;
-    left: 0px;
-    z-index: 2;
-}
-
-main aside ul {
-    color: #fff;
-    list-style: none;
+main {
     font-family: Quicksand;
 }
 
-main aside ul i {
-    color: #00FF73;
-    padding-top: 15px;
+#carouselExampleControls {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
 }
 
-main section h4 {
-    margin-top: 30px;
-    font-family: Quicksand;
-    color: #000000;
-    font-size: 1.3em;
+.carousel-inner {
+    max-height: 800px;
+    max-width: 800px;
+}
+
+section h3 {
+    margin-top: 100px;
+    margin-bottom: 40px;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
-}
-
-main section article {
-    margin-top: 20px;
-    border: #000000 1px solid;
+    border: #000000 solid 2px;
     border-radius: 15px;
-    color: #ffffff;
+}
+
+section article {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.map {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.map h2 {
     font-family: Quicksand;
-    font-size: 1.3em;
-    padding: 35px;
-    color: #000000;
-}
-
-main section article h5 {
-    color: #000000;
-    text-align: left;
-}
-
-main .article1 {
-    height: 500px;
-}
-
-main .article1 .legendeNP {
-    position: absolute;
-    right: 20px;
-    margin-top: 50px;
-}
-
-main .article1 .neuralplan {
-    position: absolute;
-    left: 20px;
-}
-
-main .article2 {
-    height: 300px;
-}
-
-main .article2 img {
-    position: absolute;
-    left: 0px;
-}
-
-main .article2 p {
-    padding-top: 30px;
-    text-align: right;
-    text-overflow: hidden;
-}
-
-main .article3 {
-    height: 300px;
-}
-
-main .article3 img {
-    position: absolute;
-    right: 10px;
-}
-
-main .article3 p {
-    padding-top: 30px;
-    text-align: left;
-}
-
-main .article4 {
-    height: 350px;
-}
-
-main .article4 img {
-    position: absolute;
-    right: 0px;
-}
-
-main .article4 p {
-    padding-top: 50px;
-    text-align: left;
+    text-align: center;
+    margin-top: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    border: #000000 solid 2px;
+    border-radius: 15px;
 }
 
 
@@ -386,6 +254,7 @@ footer {
     background-color: #000000;
     border-top: #00FF73 3px solid;
     font-family: Quicksand;
+    margin-top: 80px;
     width: 100%;
     z-index: 100;
 }
@@ -438,57 +307,16 @@ footer .copyright {
 /*--------------------------------------media query---------------------------------*/
 
 @media (max-width: 990px) {
-    main nav,
-    main section img,
-    main aside,
     footer .lienfooter1 {
         display: none;
-    }
-    main section article {
-        height: auto;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    main .article2,
-    main .article3,
-    main .article4 {
-        height: 500px;
     }
     footer .lienfooter2 a {
         text-align: center;
         margin-top: 10px;
         width: 100%;
     }
-    footer {
-        margin-top: 30px;
-    }
     footer .copyright {
         margin-top: 30px;
-    }
-}
-
-@media (max-width: 350px) {
-    main .article2,
-    main .article3,
-    main .article4 {
-        height: 970px;
-    }
-    main .article1 {
-        height: 1040px;
-    }
-    footer {
-        margin-top: 30px;
-    }
-}
-
-@media (max-width: 280px) {
-    main .article2,
-    main .article3,
-    main .article4 {
-        height: 700px;
-    }
-    main .article1 {
-        height: 870px;
     }
 }
 
