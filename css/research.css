@@ -481,6 +481,17 @@ footer .copyright {
     }
 }
 
+@media (max-width: 300px) {
+    main .article2,
+    main .article3,
+    main .article4 {
+        height: 1040px;
+    }
+    main .article1 {
+        height: 1140px;
+    }
+}
+
 @media (min-width: 990px) {
     footer .lienfooter2 {
         display: none;
