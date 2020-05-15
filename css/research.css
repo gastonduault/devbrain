@@ -485,10 +485,12 @@ footer .copyright {
     main .article2,
     main .article3,
     main .article4 {
-        height: 1040px;
+        height: 1240px;
+        padding: 5px;
     }
     main .article1 {
-        height: 1140px;
+        height: 1440px;
+        padding: 5px;
     }
 }
 
